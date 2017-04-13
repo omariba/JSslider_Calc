@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<meta charset="utf-8">
 <head>
   <title>jQuery UI Slider</title>
   <link rel="stylesheet" href="jquery-ui.css">
@@ -12,7 +13,7 @@
 <div id="wid">
 	<div>
 		<b style="margin-left: -20px;">Property Price:</b>
-		<input style="margin-left: 42px;" type="text">
+		<input id="user_input" type="text">
 	</div><br />
 	<!-- Down payment slider !-->
 	<div id="slider">
@@ -39,10 +40,15 @@
 	<!-- Amount Monthly !-->
 	<div>
 		<b style="margin-left: -20px;">Amount Monthly:</b>
-		<label id="amount_monthly"></label>
+		<label id="amount_monthly">Monthly Amount Test</label>
+	</div>
+
+	<div>
+		<input id="button" type="submit" value="Calculate">
 	</div>
 	
 </div>
  
 </body>
 </html>
+
