@@ -59,5 +59,8 @@ table {
 }
 
 #varry{
-	width: 30px;
+	width: 100px;
+	float: right;
+	margin-right: -150px;
+	margin-top: -6px;
 }
