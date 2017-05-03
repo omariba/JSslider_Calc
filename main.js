@@ -2,6 +2,7 @@
   	//Down Payment
     var handle = $( "#varry" );
     $( "#slider" ).slider({
+      step: 1000,
       min: 0,
       max: 100000,
       create: function() {
@@ -9,6 +10,7 @@
       },
       slide: function( event, ui ) {
         handle.text( ui.value );
+        handle.val( ui.value );
       }
     });
     //Interest
@@ -61,10 +63,14 @@
           yrs = $( "#yrs_label" ).text()
         }
       );
+    $("#varry").change(function det_down_payment(){
+          down_payment = $("#varry").val();
+          $("#slider").slider("value", parseInt(down_payment))
+        }
+      );
     //Main Calculator
     $("#button").click(function gen(){
         interest = $( "#int_label" ).text();
-        down_payment = $( "#varry" ).text();
         yrs = $( "#yrs_label" ).text();
 
       var  m_i = interest/1200
