@@ -64,3 +64,17 @@ table {
 	margin-right: -150px;
 	margin-top: -6px;
 }
+
+#int_label{
+	width: 50px;
+	float: right;
+	margin-right: -100px;
+	margin-top: -6px;
+}
+
+#yrs_label{
+	width: 50px;
+	float: right;
+	margin-right: -100px;
+	margin-top: -6px;
+}
